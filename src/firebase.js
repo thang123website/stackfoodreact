@@ -8,13 +8,13 @@ import {
 import { getAuth } from 'firebase/auth'
 
 const firebaseConfig = {
-    apiKey: 'AIzaSyCHZCBLcVJf2NqZYsd37TzUxqzVcDI-2JU',
-    authDomain: 'bento-food.firebaseapp.com',
-    projectId: 'bento-food',
-    storageBucket: 'bento-food.firebasestorage.app',
-    messagingSenderId: '299589180044',
-    appId: '1:299589180044:web:b575785f8db4c9d93f79a9',
-    measurementId: 'G-BS3XFY11Q6',
+    apiKey: "AIzaSyDDGJ_ETSpgZvX7J-CtaFtQl5ldOhv1_kg",
+    authDomain: "lunar-planet-440014-h3.firebaseapp.com",
+    projectId: "lunar-planet-440014-h3",
+    storageBucket: "lunar-planet-440014-h3.firebasestorage.app",
+    messagingSenderId: "936861961273",
+    appId: "1:936861961273:web:dd0dcdf6bda7c14cdad1e8",
+    measurementId: "G-R2FJPDQ2FB"
 }
 const firebaseApp = !getApps().length ? initializeApp(firebaseConfig) : getApp()
 const messaging = (async () => {
@@ -33,7 +33,7 @@ const messaging = (async () => {
 export const fetchToken = async (setFcmToken) => {
     return getToken(await messaging, {
         vapidKey:
-            '',
+            'xq1W8G7Nm51KBapMsmJr4WhyMocXdMuRbWvAK9vLFL8',
     })
         .then((currentToken) => {
             if (currentToken) {

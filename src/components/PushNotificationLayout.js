@@ -22,10 +22,15 @@ const PushNotificationLayout = ({ children, refetch, pathName }) => {
     const { mutate } = useStoreFcm()
 
     useEffect(() => {
-        if (token) {
+    //     if (token) {
+    //         mutate(fcmToken)
+    //     }
+    // }, [fcmToken])
+    if (token && fcmToken) {
             mutate(fcmToken)
         }
     }, [fcmToken])
+    
 
     const clickHandler = () => {
         if (notification.type === 'message') {

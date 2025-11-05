@@ -2,6 +2,7 @@ import usFlag from '../../../../../public/static/country-flag/us.svg'
 import arFlag from '../../../../../public/static/country-flag/arabic-flag-svg.svg'
 import banFlag from '../../../../../public/static/country-flag/bangladesh (1).png'
 import spanFlag from '../../../../../public/static/country-flag/spain.png'
+import vnFlag from '../../../../../public/static/country-flag/spain.png'
 export const languageLists = [
     {
         languageName: 'Arabic',
@@ -26,5 +27,11 @@ export const languageLists = [
         languageCode: 'bn',
         countryCode: 'BN',
         countryFlag: banFlag.src,
+    },
+    {
+        languageName: 'Vietnamese',
+        languageCode: 'vi',
+        countryCode: 'VN',
+        countryFlag: vnFlag.src,
     },
 ]
